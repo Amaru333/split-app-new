@@ -1,2 +1,9 @@
 export const PRIMARY_COLOR = "#57579D";
 export const SECONDARY_COLOR = "#9D577A";
+export const PRIMARY_TEXT_COLOR = "#000000";
+export const SECONDARY_TEXT_COLOR = "#F1F1F1";
+export const MUTED_COLOR = "#8A8A8A";
+export const MUTED_LIGHT_COLOR = "#C6C6C6";
+export const SUCCESS_COLOR = "#009E0D";
+export const ERROR_COLOR = "#9E0003";
+export const PRIMARY_DARK_COLOR = "#1A1A1A";

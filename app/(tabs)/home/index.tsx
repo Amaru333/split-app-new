@@ -1,9 +1,6 @@
-import { View, Text } from "react-native";
 import React from "react";
 import DashboardView from "@/components/views/dashboard";
 
-const Dashboard = () => {
+export default function HomeScreen() {
   return <DashboardView />;
-};
-
-export default Dashboard;
+}

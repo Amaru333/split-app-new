@@ -2,12 +2,7 @@ import { Stack } from "expo-router";
 import "../global.css";
 import { colorScheme } from "nativewind";
 
-import {
-  Poppins_600SemiBold,
-  Poppins_400Regular,
-  Poppins_500Medium,
-  useFonts,
-} from "@expo-google-fonts/poppins";
+import { Poppins_600SemiBold, Poppins_400Regular, Poppins_500Medium, useFonts } from "@expo-google-fonts/poppins";
 import * as SplashScreen from "expo-splash-screen";
 import { useEffect } from "react";
 
@@ -30,11 +25,8 @@ export default function RootLayout() {
   }
 
   return (
-    <Stack
-      screenOptions={{
-        headerShown: false,
-        contentStyle: { backgroundColor: "transparent" },
-      }}
-    />
+    <Stack screenOptions={{ headerShown: false }}>
+      <Stack.Screen name="(tabs)" />
+    </Stack>
   );
 }
