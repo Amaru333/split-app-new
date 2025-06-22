@@ -7,12 +7,7 @@ import UIButton from "@/components/widgets/UIButton";
 const StatsCard = () => {
   return (
     <View>
-      <LinearGradient
-        colors={[PRIMARY_COLOR, SECONDARY_COLOR]}
-        start={{ x: 0, y: 0 }}
-        end={{ x: 1, y: 0 }}
-        style={styles.gradientCard}
-      >
+      <LinearGradient colors={[PRIMARY_COLOR, SECONDARY_COLOR]} start={{ x: 0, y: 0 }} end={{ x: 1, y: 0 }} style={styles.gradientCard}>
         <Text className="text-secondary-text font-p_med text-2xl">Welcome Back,</Text>
         <View className="flex-row justify-between mt-6">
           <View className="items-center gap-y-1">

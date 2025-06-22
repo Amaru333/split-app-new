@@ -20,19 +20,21 @@ const PaymentDetails = () => {
 const StatsCard = ({ title }: { title: string | string[] }) => {
   return (
     <LinearGradient colors={[PRIMARY_COLOR, SECONDARY_COLOR]} start={{ x: 0, y: 0 }} end={{ x: 1, y: 0 }} style={styles.gradientCard}>
-      <TouchableOpacity className="flex-row items-center gap-2" onPress={() => router.back()}>
-        <Ionicons name="arrow-back" size={24} color={SECONDARY_TEXT_COLOR} className="mb-2" />
-        <Text className="text-secondary-text font-p_semi text-4xl">{title}</Text>
-      </TouchableOpacity>
-      <View className="mt-4">
-        <View className="flex-row items-center gap-x-2">
-          <Text className="text-secondary-text font-p_med text-2xl">You're owed</Text>
-          <Text className="text-success font-p_semi text-2xl">$342.39</Text>
-        </View>
-        <View className="mt-1">
-          <PaymentDetails />
-          <PaymentDetails />
-          <PaymentDetails />
+      <View className="px-4 pt-16">
+        <TouchableOpacity className="flex-row items-center gap-2" onPress={() => router.back()}>
+          <Ionicons name="arrow-back" size={24} color={SECONDARY_TEXT_COLOR} className="mb-2" />
+          <Text className="text-secondary-text font-p_semi text-4xl">{title}</Text>
+        </TouchableOpacity>
+        <View className="mt-4">
+          <View className="flex-row items-center gap-x-2">
+            <Text className="text-secondary-text font-p_med text-2xl">You're owed</Text>
+            <Text className="text-success font-p_semi text-2xl">$342.39</Text>
+          </View>
+          <View className="mt-1">
+            <PaymentDetails />
+            <PaymentDetails />
+            <PaymentDetails />
+          </View>
         </View>
       </View>
     </LinearGradient>
@@ -43,8 +45,6 @@ export default StatsCard;
 
 const styles = StyleSheet.create({
   gradientCard: {
-    padding: 16,
-    paddingTop: 60,
     paddingBottom: 48,
     borderBottomLeftRadius: 16,
     borderBottomRightRadius: 16,

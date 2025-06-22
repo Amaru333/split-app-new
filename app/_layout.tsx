@@ -1,6 +1,7 @@
 import { Stack } from "expo-router";
 import "../global.css";
 import { colorScheme } from "nativewind";
+import { GluestackProvider } from "../components/providers/GluestackProvider";
 
 import { Poppins_600SemiBold, Poppins_400Regular, Poppins_500Medium, useFonts } from "@expo-google-fonts/poppins";
 import * as SplashScreen from "expo-splash-screen";
@@ -25,8 +26,10 @@ export default function RootLayout() {
   }
 
   return (
-    <Stack screenOptions={{ headerShown: false }}>
-      <Stack.Screen name="(tabs)" />
-    </Stack>
+    <GluestackProvider>
+      <Stack screenOptions={{ headerShown: false }}>
+        <Stack.Screen name="(tabs)" />
+      </Stack>
+    </GluestackProvider>
   );
 }
