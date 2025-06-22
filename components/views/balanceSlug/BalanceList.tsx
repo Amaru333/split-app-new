@@ -19,7 +19,20 @@ const BalanceIndividualItem = () => {
 
 const BalanceItem = () => {
   return (
-    <View className="my-2">
+    <View
+      className="bg-secondary-text dark:bg-primary-dark rounded-lg mb-4 p-4"
+      style={{
+        shadowColor: "#000",
+        shadowOffset: {
+          width: 0,
+          height: 2,
+        },
+        shadowOpacity: 0.25,
+        shadowRadius: 3.84,
+
+        elevation: 5,
+      }}
+    >
       <View className="flex-row items-center gap-x-3">
         <Image source={require("@/assets/images/profile.png")} className="w-10 h-10 rounded-full border border-muted" />
         <View className="flex-row items-center gap-x-1">
@@ -39,7 +52,6 @@ const BalanceList = () => {
       {Array.from({ length: 10 }).map((_, index) => (
         <React.Fragment key={index}>
           <BalanceItem />
-          {index !== 9 && <Separator />}
         </React.Fragment>
       ))}
     </View>
