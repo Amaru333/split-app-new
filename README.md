@@ -1,50 +1,55 @@
-# Welcome to your Expo app 👋
+# Split App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Split App is a mobile application built with React Native and Expo that helps you split expenses with friends and family. Keep track of who owes who, view your transaction history, and settle debts with ease.
 
-## Get started
+## Features
 
-1. Install dependencies
+- **Track Shared Expenses:** Easily add and categorize shared expenses.
+- **View Balances:** See who you owe and who owes you at a glance.
+- **Transaction History:** View a detailed history of all your transactions.
+- **Dark Mode:** Switch between light and dark themes for a comfortable viewing experience.
+- **Cross-Platform:** Works on both Android and iOS devices.
 
+## Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v18 or newer)
+- [Expo Go](https://expo.dev/client) app on your mobile device
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/split-app-new.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd split-app-new
+   ```
+3. Install the dependencies:
    ```bash
    npm install
    ```
 
-2. Start the app
+## Available Scripts
 
-   ```bash
-    npx expo start
-   ```
+In the project directory, you can run the following commands:
 
-In the output, you'll find options to open the app in a
+- `npm start`: Runs the app in development mode.
+- `npm run android`: Opens the app on a connected Android device or emulator.
+- `npm run ios`: Opens the app on an iOS simulator.
+- `npm run web`: Runs the app in a web browser.
+- `npm test`: Runs the test suite.
+- `npm run lint`: Lints the code.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Tech Stack
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- [React Native](https://reactnative.dev/) - The framework for building native apps using React.
+- [Expo](https://expo.dev/) - The platform for making universal React applications.
+- [TypeScript](https://www.typescriptlang.org/) - A typed superset of JavaScript that compiles to plain JavaScript.
+- [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework for rapid UI development.
+- [Gluestack UI](https://gluestack.io/) - A universal UI library for building beautiful and consistent user interfaces.
+- [Expo Router](https://expo.github.io/router/) - A file-based router for React Native and web applications.
